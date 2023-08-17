@@ -18,7 +18,7 @@ fun main() {
     // Hello, world!
 }
 ```
-{kotlin-runnable="true" kotlin-min-compiler-version="1.3" id="hello-world-kotlin"}
+{kotlin-runnable="true" id="hello-world-kotlin"}
 
 In Kotlin:
 * `fun` is used to declare a function
@@ -54,7 +54,7 @@ fun main() {
 //sampleEnd
 }
 ```
-{kotlin-runnable="true" kotlin-min-compiler-version="1.3" id="kotlin-tour-variables"}
+{kotlin-runnable="true" id="kotlin-tour-variables"}
 
 > Variables can be declared outside the `main()` function at the beginning of your program. Variables declared in this way
 > are said to be declared at **top level**.
@@ -90,7 +90,7 @@ fun main() {
 //sampleEnd
 }
 ```
-{kotlin-runnable="true" kotlin-min-compiler-version="1.3" id="kotlin-tour-string-templates"}
+{kotlin-runnable="true" id="kotlin-tour-string-templates"}
 
 For more information, see [String templates](strings.md).
 
@@ -111,7 +111,7 @@ fun main() {
     // Write your code here
 }
 ```
-{validate="false" kotlin-runnable="true" kotlin-min-compiler-version="1.3" id="kotlin-tour-hello-world-exercise"}
+{validate="false" kotlin-runnable="true" id="kotlin-tour-hello-world-exercise"}
 
 |---|---|
 ```kotlin
