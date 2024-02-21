@@ -24,13 +24,6 @@
             <a href="scope-functions.md" description="Scope functions: let, with, run, apply, and also">Scope functions</a>
             <a href="coroutines-overview.md" description="Concurrency: coroutines, flows, channels">Coroutines</a>
         </highlighted-group>
-        <main-group>
-            <title>First steps</title>
-            <a href="basic-syntax.md" description="A quick introduction to Kotlin syntax: keywords, operators, program structure">Basic syntax</a>
-            <a href="kotlin-tour-welcome.md" description="Take a tour of the fundamentals of the Kotlin programming language">Kotlin tour</a>
-            <a href="koans.md" description="Programming exercises to get you familiar with Kotlin">Koans</a>
-            <a href="command-line.md" description="Download and install the Kotlin compiler">Command-line compiler</a>
-        </main-group>
         <custom-groups>
             <group type="cards" display="wide">
                 <title>What's new</title>
@@ -45,5 +38,12 @@
                 <a href="https://www.jetbrains.com/help/kotlin-multiplatform-dev/compose-multiplatform-getting-started.html" description="Use Compose Multiplatform to implement one user interface across all platforms">Get started with Compose Multiplatform</a>
             </group>
         </custom-groups>
+        <main-group>
+            <title>First steps</title>
+            <a href="basic-syntax.md" description="A quick introduction to Kotlin syntax: keywords, operators, program structure">Basic syntax</a>
+            <a href="kotlin-tour-welcome.md" description="Take a tour of the fundamentals of the Kotlin programming language">Kotlin tour</a>
+            <a href="koans.md" description="Programming exercises to get you familiar with Kotlin">Koans</a>
+            <a href="command-line.md" description="Download and install the Kotlin compiler">Command-line compiler</a>
+        </main-group>
     </section-starting-page>
 </topic>
