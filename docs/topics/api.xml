@@ -11,29 +11,21 @@
             Learn official API references of JetBrains libraries for Kotlin
         </description>
         <tip-group>
-            <title>Tip group</title>
             <a href="coroutines-overview.md"
-               desceription="Coroutines guide"/>
+               desceription="Coroutines guide">Get started with Coroutines</a>
         </tip-group>
         <main-group>
             <title>Main group</title>
-            <a href="https://kotlinlang.org/api/latest/jvm/stdlib/"
-               description="Standard library reference"/>
-            <a href="https://kotlinlang.org/api/latest/kotlin.test/"
-               description="Test library reference"/>
-            <a href="https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/"
-               description="Coroutines library reference"/>
-            <a href="https://kotlinlang.org/api/kotlinx.serialization/kotlinx-serialization-core/"
-               description="Serialization library reference"/>
-            <a href="https://kotlinlang.org/api/kotlinx-datetime/"
-               description="Date and time library reference"/>
-            <a href="https://kotlinlang.org/api/kotlinx-metadata-jvm/"
-               description="JVM metadata reference"/>
+            <a href="https://kotlinlang.org/api/latest/jvm/stdlib/" description="Standard library reference">Standard library reference</a>
+            <a href="https://kotlinlang.org/api/latest/kotlin.test/" description="Test library reference">Test library reference</a>
+            <a href="https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/" description="Coroutines library reference">Coroutines library reference</a>
+            <a href="https://kotlinlang.org/api/kotlinx.serialization/kotlinx-serialization-core/" description="Serialization library reference">Serialization library reference</a>
+            <a href="https://kotlinlang.org/api/kotlinx-datetime/" description="Date and time library reference">Date and time library reference</a>
+            <a href="https://kotlinlang.org/api/kotlinx-metadata-jvm/" description="JVM metadata reference">JVM metadata reference</a>
         </main-group>
         <highlighted-group>
             <title>Highlighted group</title>
-            <a href="https://api.ktor.io"
-               description="Ktor API reference"/>
+            <a href="https://api.ktor.io" description="Ktor API reference">Ktor API reference</a>
         </highlighted-group>
     </section-starting-page>
 </topic>
