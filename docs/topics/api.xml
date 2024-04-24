@@ -1,23 +1,30 @@
-<section-starting-page>
-    <title>Kotlin API reference</title>
-    <description>
-        Learn official API references of JetBrains libraries for Kotlin
-    </description>
-    <main-group>
-        <title></title>
-        <a href="https://kotlinlang.org/api/latest/jvm/stdlib/"
-           description="Standard library reference"/>
-        <a href="https://kotlinlang.org/api/latest/kotlin.test/"
-           description="Test library reference"/>s
-        <a href="https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/"
-           description="Coroutines library reference"/>
-        <a href="https://kotlinlang.org/api/kotlinx.serialization/kotlinx-serialization-core/"
-           description="Serialization library reference"/>
-        <a href="https://kotlinlang.org/api/kotlinx-datetime/"
-           description="Date and time library reference"/>
-        <a href="https://kotlinlang.org/api/kotlinx-metadata-jvm/"
-           description="JVM metadata reference"/>
-        <a href="https://api.ktor.io"
-           description="Ktor API reference"/>
-    </main-group>
-</section-starting-page>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/stardust/html-entities.dtd">
+<topic xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/stardust/topic.v2.xsd"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       title="Kotlin API reference"
+       id="api">
+    <section-starting-page>
+        <title>Kotlin API reference</title>
+        <description>
+            Learn official API references of JetBrains libraries for Kotlin
+        </description>
+        <main-group>
+            <a href="https://kotlinlang.org/api/latest/jvm/stdlib/"
+               description="Standard library reference"/>
+            <a href="https://kotlinlang.org/api/latest/kotlin.test/"
+               description="Test library reference"/>
+            <a href="https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/"
+               description="Coroutines library reference"/>
+            <a href="https://kotlinlang.org/api/kotlinx.serialization/kotlinx-serialization-core/"
+               description="Serialization library reference"/>
+            <a href="https://kotlinlang.org/api/kotlinx-datetime/"
+               description="Date and time library reference"/>
+            <a href="https://kotlinlang.org/api/kotlinx-metadata-jvm/"
+               description="JVM metadata reference"/>
+            <a href="https://api.ktor.io"
+               description="Ktor API reference"/>
+        </main-group>
+    </section-starting-page>
+</topic>
