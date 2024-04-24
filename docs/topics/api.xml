@@ -10,7 +10,13 @@
         <description>
             Learn official API references of JetBrains libraries for Kotlin
         </description>
+        <tip-group>
+            <title>Tip group</title>
+            <a href="coroutines-overview.md"
+               desceription="Coroutines guide"/>
+        </tip-group>
         <main-group>
+            <title>Main group</title>
             <a href="https://kotlinlang.org/api/latest/jvm/stdlib/"
                description="Standard library reference"/>
             <a href="https://kotlinlang.org/api/latest/kotlin.test/"
@@ -23,8 +29,11 @@
                description="Date and time library reference"/>
             <a href="https://kotlinlang.org/api/kotlinx-metadata-jvm/"
                description="JVM metadata reference"/>
+        </main-group>
+        <highlighted-group>
+            <title>Highlighted group</title>
             <a href="https://api.ktor.io"
                description="Ktor API reference"/>
-        </main-group>
+        </highlighted-group>
     </section-starting-page>
 </topic>
