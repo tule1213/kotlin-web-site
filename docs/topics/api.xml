@@ -1,0 +1,23 @@
+<section-starting-page>
+    <title>Kotlin API reference</title>
+    <description>
+        Learn official API references of JetBrains libraries for Kotlin
+    </description>
+    <main-group>
+        <title></title>
+        <a href="https://kotlinlang.org/api/latest/jvm/stdlib/"
+           description="Standard library reference"/>
+        <a href="https://kotlinlang.org/api/latest/kotlin.test/"
+           description="Test library reference"/>s
+        <a href="https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/"
+           description="Coroutines library reference"/>
+        <a href="https://kotlinlang.org/api/kotlinx.serialization/kotlinx-serialization-core/"
+           description="Serialization library reference"/>
+        <a href="https://kotlinlang.org/api/kotlinx-datetime/"
+           description="Date and time library reference"/>
+        <a href="https://kotlinlang.org/api/kotlinx-metadata-jvm/"
+           description="JVM metadata reference"/>
+        <a href="https://api.ktor.io"
+           description="Ktor API reference"/>
+    </main-group>
+</section-starting-page>
