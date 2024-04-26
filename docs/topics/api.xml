@@ -12,7 +12,7 @@
         </description>
         <tip-group>
             <a href="coroutines-overview.md"
-               desceription="Coroutines guide">Get started with Coroutines</a>
+               desceription="Coroutines guide" type="learn">Get started with Coroutines</a>
         </tip-group>
         <main-group>
             <title>Main group</title>
