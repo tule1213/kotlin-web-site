@@ -15,12 +15,12 @@
             <a href="https://kotlinlang.org/api/latest/kotlin.test/" description="Test library reference" type="learn">Test library reference</a>
         </tip-group>
         <main-group>
-            <title>Main group</title>
+            <title></title>
             <a href="https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/" description="Coroutines library reference">Coroutines library reference</a>
             <a href="https://kotlinlang.org/api/kotlinx.serialization/kotlinx-serialization-core/" description="Serialization library reference">Serialization library reference</a>
         </main-group>
         <highlighted-group>
-            <title>Highlighted group</title>
+            <title></title>
             <a href="https://kotlinlang.org/api/kotlinx-datetime/" description="Date and time library reference">Date and time library reference</a>
             <a href="https://kotlinlang.org/api/kotlinx-metadata-jvm/" description="JVM metadata reference">JVM metadata reference</a>
             <a href="https://api.ktor.io" description="Ktor API reference">Ktor API reference</a>
