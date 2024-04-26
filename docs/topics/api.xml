@@ -11,13 +11,11 @@
             Learn official API references of JetBrains libraries for Kotlin
         </description>
         <tip-group>
-            <a href="coroutines-overview.md"
-               desceription="Coroutines guide" type="learn">Get started with Coroutines</a>
+            <a href="https://kotlinlang.org/api/latest/jvm/stdlib/" description="Standard library reference" type="learn">Standard library reference</a>
+            <a href="https://kotlinlang.org/api/latest/kotlin.test/" description="Test library reference" type="learn">Test library reference</a>
         </tip-group>
         <main-group>
             <title>Main group</title>
-            <a href="https://kotlinlang.org/api/latest/jvm/stdlib/" description="Standard library reference">Standard library reference</a>
-            <a href="https://kotlinlang.org/api/latest/kotlin.test/" description="Test library reference">Test library reference</a>
             <a href="https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/" description="Coroutines library reference">Coroutines library reference</a>
             <a href="https://kotlinlang.org/api/kotlinx.serialization/kotlinx-serialization-core/" description="Serialization library reference">Serialization library reference</a>
         </main-group>
