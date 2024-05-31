@@ -18,7 +18,7 @@ object BuildReferenceDocs : BuildType({
   """.trimIndent()
 
   params {
-    param("WEBHELP_FRONTEND_VERSION", "6.11.0-footer")
+    param("WEBHELP_FRONTEND_VERSION", "6.12.1-footer")
     param("WH_DOCS_PATH_REGEX", "docs")
     param("WH_PROJECT_NAME", "kotlin-reference")
   }
