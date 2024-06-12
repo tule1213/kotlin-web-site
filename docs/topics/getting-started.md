@@ -16,7 +16,7 @@ Download and install one of these IDEs to start using Kotlin.
  
 <tabs>
 
-<tab id="backend" title="Backend">
+<tab id="backend" title="Backend" hidden="true" class="test">
 
 Here is how you can take the first steps in developing Kotlin server-side applications.
 
