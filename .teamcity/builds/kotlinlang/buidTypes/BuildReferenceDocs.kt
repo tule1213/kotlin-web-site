@@ -42,7 +42,7 @@ object BuildReferenceDocs : BuildType({
       snapshot {}
 
       artifacts {
-        buildRule = build("73")
+        buildRule = build("78")
         cleanDestination = true
         artifactRules = """
             +:webHelpImages.zip!** => images/
