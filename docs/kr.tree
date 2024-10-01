@@ -329,6 +329,7 @@
 				<toc-element toc-title="Compilation and caches in KGP" topic="gradle-compilation-and-caches.md"/>
 				<toc-element topic="gradle-plugin-variants.md"/>
 			</toc-element>
+			<toc-element topic="Gradle-best-practices.md"/>
 			<toc-element accepts-web-file-names="using-maven.html" topic="maven.md"/>
 			<toc-element accepts-web-file-names="using-ant.html" topic="ant.md"/>
 		</toc-element>
