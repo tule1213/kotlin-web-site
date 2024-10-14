@@ -6,7 +6,7 @@ and learn how they can help you use efficient design patterns to take your proje
 ## Extension functions
 
 In software development, you often need to modify the behavior of a program without altering the original source code. 
-For example, in your project, you might want to add additional functionality to a class from a third-party library.
+For example, in your project, you might want to add extra functionality to a class from a third-party library.
 
 Extension functions allow you to extend a class with additional functionality. You call extension functions as if they 
 are member functions of a class.
@@ -16,10 +16,10 @@ Before introducing the syntax for extension functions, you need to understand th
 
 The receiver object is what the function is called on. In other words, the receiver is where or with whom the information is shared.
 
-In this example, the `main()` function calls the `.first()` function. The `.first()` function is called on the `readOnlyShapes`
-variable so the `readOnlyShapes` variable is the receiver:
-
 ![An example of sender and receiver](receiver-highlight.png){width="500"}
+
+In this example, the `main()` function calls the `.first()` function. The `.first()` function is called on the `readOnlyShapes`
+variable, so the `readOnlyShapes` variable is the receiver.
 
 The receiver object has a **type** so that the compiler understands when the function can be used.
 
@@ -28,7 +28,7 @@ your function. Continue with the rest of the function declaration, including its
 
 In the following example:
 
-* `String` is the class that is extended, also known as the receiver type.
+* `String` is the extended class, also known as the receiver type.
 * The `.bold()` extension function's return type is `String`.
 * An instance of `String` is the receiver object.
 * The receiver object is accessed inside the body by the [keyword](keyword-reference.md): `this`.
@@ -51,19 +51,19 @@ fun main() {
 Extension functions can be defined anywhere, enabling you to create extension-oriented designs. Such designs separate 
 core functionality from useful but non-essential features, making your code easier to read and maintain.
 
-A good example is the [`HttpClient`](https://api.ktor.io/ktor-client/ktor-client-core/io.ktor.client/-http-client/index.html) class from the Ktor library, which helps with performing network requests. The core of
-its functionality is a single function, which takes all the information you may use in a HTTP request:
+A good example is the [`HttpClient`](https://api.ktor.io/ktor-client/ktor-client-core/io.ktor.client/-http-client/index.html) class from the Ktor library, which helps perform network requests. The core of
+its functionality is a single function, which takes all the information you may use in an HTTP request:
 
 ```kotlin
 class HttpClient {
-  fun request(method: String, url: String, headers: Map<String, String>): HttpResponse {
-    // Network code
-  }
+    fun request(method: String, url: String, headers: Map<String, String>): HttpResponse {
+        // Network code
+    }
 }
 ```
 
 In practice, most people just want to perform a GET or POST request, so it makes sense for the library to provide shorter
-names for that common use case. However, those don't require writing new network code, only the specific call to request.
+names for that common use case. However, those don't require writing new network code, only the specific request call.
 In other words, they are perfect candidates to be defined as extension functions:
 
 ```kotlin
@@ -112,7 +112,7 @@ Write a function called `toLowercaseString` that takes a string and returns a lo
 <deflist collapsible="true">
     <def title="Hint">
         Use the <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/lowercase.html"> <code>.lowercase()</code>
-        </a> function for <code>String</code> type. 
+        </a> function for the <code>String</code> type. 
     </def>
 </deflist>
 
@@ -149,14 +149,14 @@ Scope functions also make your code more concise because you don't have to refer
 scope. Depending on the scope function, you can access the object either by referencing it via the keyword `this` or using it as an
 argument via the keyword `it`.
 
-Kotlin has five scope functions in total: `.let()`, `.apply()`, `.run()`, `.also()`,  and `with()`.
+Kotlin has five scope functions in total: `.let()`, `.apply()`, `.run()`, `.also()`, and `with()`.
 
 Each scope function takes a lambda expression and returns either the object or the result of the lambda expression. In 
-this tour, we explain each scope function with a recommendation for how to use it.
+this tour, we explain each scope function and how to use it.
 
-> If you prefer, the information in this section is also presented in a YouTube video by our developer advocate: Sebastian Aigner.
-> To learn more, watch [Back to the Stdlib: Making the Most of Kotlin's Standard Library](https://youtu.be/DdvgvSHrN9g?feature=shared&t=1511).
->
+> You can also watch the [Back to the Stdlib: Making the Most of Kotlin's Standard Library](https://youtu.be/DdvgvSHrN9g?feature=shared&t=1511)
+> talk on scope functions by Sebastian Aigner, Kotlin's developer advocate.
+> 
 
 ### Let
 
@@ -186,7 +186,7 @@ The example has two functions:
 * `sendNotification()`, which has a function parameter `recipientAddress` and returns a string.
 * `getNextAddress()`, which has no function parameters and returns a string.
 
-The example creates a variable `addr` that has nullable `String` type. But this becomes a problem when you call
+The example creates a variable `addr` that has a nullable `String` type. But this becomes a problem when you call
 the `sendNotification()` function because the `sendNotification()` function doesn't expect that `addr` could be a `null` value.
 The compiler reports an error as a result: 
 
@@ -195,7 +195,7 @@ Type mismatch: inferred type is String? but String was expected
 ```
 
 From the beginner tour, you already know that you can perform a null check with an if condition or use the [Elvis operator](kotlin-tour-null-safety.md#use-elvis-operator). 
-But what if you want to use the returned object later on in your code? You could achieve this with an if condition **and** an 
+But what if you want to use the returned object later in your code? You could achieve this with an if condition **and** an 
 else branch:
 
 ```kotlin
@@ -244,14 +244,14 @@ fun main() {
 
 The example:
 * Creates a variable called `confirm`.
-* Uses a safe call to call the `.let()` scope function on the `addr` variable.
+* Uses a safe call for the `.let()` scope function on the `addr` variable.
 * Creates a temporary scope within the `.let()` scope function so that you don't have to explicitly refer to the `addr` variable.
 * Passes the `sendNotification()` function as a lambda expression into the `.let()` scope function.
 * Uses the temporary scope to refer to the `addr` variable via `it`.
 * Assigns the result to the `confirm` variable.
 
 With this approach, your code can handle the `addr` variable potentially being a `null` value, and you can use the 
-`confirm` variable later on in your code.
+`confirm` variable later in your code.
 
 ### Apply
 
@@ -326,10 +326,10 @@ As you can see, this strategy is convenient when you are working with large piec
 
 ### Run
 
-Similar to `.apply()` you can use the `.run()` scope function to initialize an object, but it's better to use `.run()` 
+Similar to `.apply()`, you can use the `.run()` scope function to initialize an object, but it's better to use `.run()` 
 to initialize an object at a specific moment in your code **and** immediately compute a result.
 
-Let's continue the previous example for the `.apply()` function but this time you want the `connect()` and
+Let's continue the previous example for the `.apply()` function, but this time, you want the `connect()` and
 `authenticate()` functions to be grouped so that they are called on every request.
 
 For example:
@@ -401,7 +401,7 @@ fun main() {
 The example:
 
 * Creates the `medals` variable that contains a list of strings.
-* Creates the `reversedLongUpperCaseMedals` variable that has `List<String>` type.
+* Creates the `reversedLongUpperCaseMedals` variable that has the `List<String>` type.
 * Uses the `.map()` extension function on the `medals` variable.
 * Passes a lambda expression to the `.map()` function that refers to `medals` via the `it` keyword and calls the `upperCase()` extension function on it.
 * Uses the `.filter()` extension function on the `medals` variable.
@@ -653,17 +653,18 @@ In the beginner's tour, you learned how to use [lambda expressions](kotlin-tour-
 which means that the lambda expression can access any member functions or properties of the receiver object without having
 to explicitly specify it each time. Without these additional references, your code is easier to read and maintain.
 
-The syntax for a lambda expression with receiver is different when you define the function type: write the receiver object
-that you want to extend followed by a `.` and the rest of your function type definition. For example: `MutableList<Int>.() -> Unit`.
+> Lambda expressions with receiver are also called function literals with receiver.
+>
+
+The syntax for a lambda expression with receiver is different when you define the function type. First, write the receiver
+object that you want to extend. Next, put a `.` and then complete the rest of your function type definition. For example:
+`MutableList<Int>.() -> Unit`.
 
 This function type has:
 
 * `MutableList<Int>` as the receiver type.
 * No function parameters within the parentheses `()`.
 * No return value: `Unit`.
-
-> Lambda expressions with receiver are also called function literals with receiver.
->
 
 Consider this example that extends the `StringBuilder` class:
 
@@ -697,8 +698,8 @@ Lambda expressions with receiver are helpful when you want to create a domain-sp
 access to the receiver object's member functions and properties without explicitly referencing the receiver, your code 
 becomes more concise and easier to read.
 
-To demonstrate this, consider an example that configures items in a menu. Let's begin with a `MenuItem` class, and a 
-`Menu` class that contains a function to add items to the menu called `item()` as well as a list of all menu items `items`:
+To demonstrate this, consider an example that configures items in a menu. Let's begin with a `MenuItem` class and a 
+`Menu` class that contains a function to add items to the menu called `item()`, as well as a list of all menu items `items`:
 
 ```kotlin
 class MenuItem(val name: String)
@@ -726,7 +727,7 @@ fun menu(name: String, init: Menu.() -> Unit): Menu {
 }
 ```
 
-Now you can use the DSL to configure a menu and create a `printMenu()` function to print the menu structure to console:
+Now you can use the DSL to configure a menu and create a `printMenu()` function to print the menu structure to the console:
 
 ```kotlin
 class MenuItem(val name: String)
@@ -774,7 +775,7 @@ fun main() {
 
 As you can see, using a lambda expression with receiver greatly simplifies the code needed to create your menu. Lambda 
 expressions are not only useful for setup and creation but also for configuration. They are commonly used in building 
-DSLs for APIs, UI frameworks and configuration builders to produce streamlined code, allowing you to focus more easily 
+DSLs for APIs, UI frameworks, and configuration builders to produce streamlined code, allowing you to focus more easily 
 on the underlying code structure and logic.
 
 Kotlin's ecosystem has many examples of this design pattern, such as in the [`buildList()`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/build-list.html)
