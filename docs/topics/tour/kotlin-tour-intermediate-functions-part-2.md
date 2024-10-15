@@ -151,8 +151,8 @@ The example has a `Client` class that contains one property called `token` and t
 The example creates `client` as an instance of the `Client` class before initializing its `token` property and calling its
 member functions in the `main()` function.
 
-Although this example is compact, in the real world it can be a while after the creation of your class instance before you
-configure it and use its member functions. However, if you use the `.apply()` scope function you can create, configure and
+Although this example is compact, in the real world, it can be a while before you can configure and use the class instance
+(and its member functions) after you've created it. However, if you use the `.apply()` scope function you can create, configure and
 use member functions on your class instance all in the same place in your code:
 
 ```kotlin
@@ -231,7 +231,7 @@ The example:
 * Creates a temporary scope within the `.apply()` scope function so that you don't have to explicitly refer to the `client` instance when accessing its properties or functions.
 * Passes a lambda expression to the `.apply()` scope function that updates the `token` property.
 
-|--|--|
+The `main()` function:
 
 * Creates a `result` variable with type `String`.
 * Uses the `.run()` scope function on the `client` instance.

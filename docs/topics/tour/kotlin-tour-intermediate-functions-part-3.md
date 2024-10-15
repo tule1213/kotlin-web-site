@@ -40,12 +40,10 @@ fun main() {
 {kotlin-runnable="true" kotlin-min-compiler-version="1.3" id="kotlin-intermediate-tour-lambda-expression-with-receiver"}
 
 In this example:
+
 * The `StringBuilder` class is the receiver type.
 * The function type of the lambda expression has no function parameters `()` and has no return value `Unit`.
 * The lambda expression calls the `append()` member function from the `StringBuilder` class and uses the string "Hello!" as the function parameter.
-
-|---|---|
-
 * An instance of the `StringBuilder` class is created.
 * The lambda expression assigned to `appendText` is called on the `stringBuilder` instance.
 * The `stringBuilder` instance is converted to string with the `.toString()` function and printed via the `println()` function.
@@ -145,7 +143,7 @@ standard library.
 
 ## Practice
 
-### Exercise 1 {initial-collapse-state="collapsed" id="lambda-receivers-exercise-1"}
+### Exercise 1 {initial-collapse-state="collapsed" collapsible="true" id="lambda-receivers-exercise-1"}
 
 You have a `fetchData` function that accepts a lambda expression with receiver. Update the lambda expression to use 
 the `append()` function so that the output of your code is: `Data received - Processed`.
@@ -181,7 +179,7 @@ fun main() {
 ```
 {initial-collapse-state="collapsed" collapsible="true" collapsed-title="Example solution" id="kotlin-tour-lambda-receievers-solution-1"}
 
-### Exercise 2 {initial-collapse-state="collapsed" id="lambda-receivers-exercise-2"}
+### Exercise 2 {initial-collapse-state="collapsed" collapsible="true" id="lambda-receivers-exercise-2"}
 
 You have a `Button` class and `ButtonEvent` and `Position` data classes. Write some code that triggers the `onEvent()`
 member function of the `Button` class to trigger a double-click event. Your code should print `"Double click!"`.
@@ -247,7 +245,7 @@ fun main() {
 ```
 {initial-collapse-state="collapsed" collapsible="true" collapsed-title="Example solution" id="kotlin-tour-lambda-receievers-solution-2"}
 
-### Exercise 3 {initial-collapse-state="collapsed" id="lambda-receivers-exercise-3"}
+### Exercise 3 {initial-collapse-state="collapsed" collapsible="true" id="lambda-receivers-exercise-3"}
 
 Write a function that creates a copy of a list of integers where every element is incremented by 1. Use the provided 
 function skeleton that extends `List<Int>` with an `incremented` function.
