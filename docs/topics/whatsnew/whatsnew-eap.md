@@ -1,5 +1,7 @@
 [//]: # (title: What's new in Kotlin %kotlinEapVersion%)
 
+<secondary-label ref="eap"/>
+
 _[Released: %kotlinEapReleaseDate%](eap.md#build-details)_
 
 > This document doesn't cover all of the features of the Early Access Preview (EAP) release, 
@@ -61,6 +63,8 @@ check out the [`SharedFlow`](https://kotlinlang.org/api/kotlinx.coroutines/kotli
 interface in the `kotlinx.coroutines` library.
 
 ## Preview of the new language features
+
+<primary-label ref="experimental-general"/>
 
 After the Kotlin 2.0.0 release with the K2 compiler, 
 the Kotlin team at JetBrains is focusing on improving the language with new features. 
@@ -173,10 +177,7 @@ and is enabled by default in Kotlin %kotlinEapVersion%.
 
 ## Improved K2 kapt implementation
 
-> The kapt plugin for the K2 compiler (K2 kapt) is in [Alpha](https://kotlinlang.org/docs/components-stability.html#stability-levels-explained).
-> It may be changed at any time. We would appreciate your feedback in [YouTrack](https://youtrack.jetbrains.com/issue/KT-71439/K2-kapt-feedback).
->
-{style="warning"}
+<primary-label ref="alpha"/>
 
 Currently, projects using the [kapt](https://kotlinlang.org/docs/kapt.html) plugin work with the K1 compiler by default, 
 supporting Kotlin versions up to 1.9.
