@@ -225,8 +225,10 @@
 		<toc-element toc-title="Library authors' guidelines">
 			<include from="api-guidelines.tree" origin="api-guidelines" element-id="api-guidelines"/>
 		</toc-element>
-		<toc-element topic="competitive-programming.md"/>
+		<toc-element toc-title="IDE for Kotlin development" accepts-web-file-names="getting-started-eclipse.html,eclipse.html" topic="kotlin-ide.md"/>
+		<toc-element accepts-web-file-names="quick-run.html" topic="run-code-snippets.md"/>
 		<toc-element toc-title="Kotlin custom scripting" topic="custom-script-deps-tutorial.md"/>
+		<toc-element topic="competitive-programming.md"/>
 	</toc-element>
 	<toc-element toc-title="Interoperability">
 		<toc-element toc-title="Java interop">
@@ -333,11 +335,9 @@
 		<toc-element toc-title="Dokka">
 			<include from="dokka.tree" origin="dokka" element-id="dokka"/>
 		</toc-element>
-		<toc-element toc-title="IDE for Kotlin development" accepts-web-file-names="getting-started-eclipse.html,eclipse.html" topic="kotlin-ide.md"/>
 		<toc-element toc-title="Migrate to Kotlin code style with IntelliJ IDEA" topic="code-style-migration-guide.md"/>
 		<toc-element topic="kotlin-notebook-overview.md"/>
 		<toc-element toc-title="Lets-Plot for Kotlin" topic="lets-plot.md"/>
-		<toc-element accepts-web-file-names="quick-run.html" topic="run-code-snippets.md"/>
 		<toc-element toc-title="TeamCity" topic="kotlin-and-ci.md"/>
 		<toc-element toc-title="KDoc" topic="kotlin-doc.md"/>
 		<toc-element toc-title="OSGi" topic="kotlin-osgi.md"/>
