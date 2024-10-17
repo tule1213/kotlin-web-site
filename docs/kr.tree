@@ -222,7 +222,9 @@
 			<toc-element toc-title="License files" topic="native-binary-licenses.md"/>
 			<toc-element topic="native-faq.md"/>
 		</toc-element>
-
+		<toc-element toc-title="Library authors' guidelines">
+			<include from="api-guidelines.tree" origin="api-guidelines" element-id="api-guidelines"/>
+		</toc-element>
 		<toc-element topic="competitive-programming.md"/>
 		<toc-element toc-title="Kotlin custom scripting" topic="custom-script-deps-tutorial.md"/>
 	</toc-element>
@@ -380,9 +382,6 @@
 		<toc-element toc-title="Learn in IDE (JetBrains Academy)">
 			<toc-element toc-title="Learn Kotlin" topic="edu-tools-learner.md"/>
 			<toc-element toc-title="Teach Kotlin" topic="edu-tools-educator.md"/>
-		</toc-element>
-		<toc-element toc-title="Library authors' guidelines">
-			<include from="api-guidelines.tree" origin="api-guidelines" element-id="api-guidelines"/>
 		</toc-element>
 	</toc-element>
 	<toc-element toc-title="Early access preview (EAP)">
